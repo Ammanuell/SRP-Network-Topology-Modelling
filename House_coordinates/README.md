@@ -1,0 +1,2 @@
+- Synthetic Network Generator - Creates realistic surburban layouts for radial networks.
+- Roadshape_xxxxx - Methods implemented/tested for trying to recover network topology off only house coordinates

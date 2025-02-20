@@ -1,0 +1,4 @@
+- Recovering network topology given pole locations as well as house locations and voltages. 
+- OpenStreetMap used to give house locations, pole locations were generated from the road layouts given as well.
+- OpenDSS used to generate house voltages.
+- Create_xxxx files were modelling functions used to create topologies

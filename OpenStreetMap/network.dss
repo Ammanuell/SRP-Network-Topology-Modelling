@@ -1,0 +1,193 @@
+Clear
+Set DefaultBaseFrequency=50
+New Circuit.Realistic_LV_Circuit basekv=11 pu=1 angle=0 frequency=50 phases=3
+set datapath=C:/Users/Amman/OneDrive/Documents/Uni/SRP/OpenStreetMap
+new linecode.95mm nphases=3 R1=0.322 X1=0.074 R0=1.282 X0=0.125 units=km
+new linecode.35mm nphases=1 R1=0.868 X1=0.077 R0=0.910 X0=0.077 units=km
+New Transformer.LV_Transformer phases=3 windings=2 buses=(Sourcebus, B_1) conns=(delta, wye) kvs=(11, 0.415) kvas=(250, 250) %loadloss=0 xhl=2.5
+New Line.Line1 bus1=B_1 bus2=B_2 length=0.03650639831653475 units=km linecode=95mm
+New Line.Line2 bus1=B_1.2 bus2=B_35.2 length=0.014887264784650488 units=km linecode=35mm
+New Line.Line3 bus1=B_2 bus2=B_7 length=0.03170590916620959 units=km linecode=95mm
+New Line.Line4 bus1=B_2 bus2=B_8 length=0.01776627038236067 units=km linecode=95mm
+New Line.Line5 bus1=B_2 bus2=B_9 length=0.022913285181823864 units=km linecode=95mm
+New Line.Line6 bus1=B_3 bus2=B_4 length=0.03488656296720637 units=km linecode=95mm
+New Line.Line7 bus1=B_3 bus2=B_8 length=0.013088982411830532 units=km linecode=95mm
+New Line.Line8 bus1=B_3.3 bus2=B_96.3 length=0.016394088055850364 units=km linecode=35mm
+New Line.Line9 bus1=B_4 bus2=B_5 length=0.03471554560898553 units=km linecode=95mm
+New Line.Line10 bus1=B_4 bus2=B_24 length=0.02157135408381363 units=km linecode=95mm
+New Line.Line11 bus1=B_4.2 bus2=B_49.2 length=0.02092002478844048 units=km linecode=35mm
+New Line.Line12 bus1=B_4.2 bus2=B_53.2 length=0.018740033551123903 units=km linecode=35mm
+New Line.Line13 bus1=B_4.2 bus2=B_68.2 length=0.0165909332731485 units=km linecode=35mm
+New Line.Line14 bus1=B_4.1 bus2=B_80.1 length=0.021382560237617084 units=km linecode=35mm
+New Line.Line15 bus1=B_5 bus2=B_6 length=0.022757498496398878 units=km linecode=95mm
+New Line.Line16 bus1=B_5.1 bus2=B_59.1 length=0.014785875658204222 units=km linecode=35mm
+New Line.Line17 bus1=B_5.3 bus2=B_69.3 length=0.017406229019274445 units=km linecode=35mm
+New Line.Line18 bus1=B_5.3 bus2=B_78.3 length=0.0171920294633606 units=km linecode=35mm
+New Line.Line19 bus1=B_6 bus2=B_29 length=0.03168619673122798 units=km linecode=95mm
+New Line.Line20 bus1=B_6 bus2=B_30 length=0.02985374570697427 units=km linecode=95mm
+New Line.Line21 bus1=B_6.1 bus2=B_71.1 length=0.015783900614901467 units=km linecode=35mm
+New Line.Line22 bus1=B_6.2 bus2=B_73.2 length=0.018999830157382217 units=km linecode=35mm
+New Line.Line23 bus1=B_7.3 bus2=B_44.3 length=0.023987769465425923 units=km linecode=35mm
+New Line.Line24 bus1=B_7.2 bus2=B_56.2 length=0.02932413664350903 units=km linecode=35mm
+New Line.Line25 bus1=B_7.2 bus2=B_60.2 length=0.019170499321369834 units=km linecode=35mm
+New Line.Line26 bus1=B_7.2 bus2=B_85.2 length=0.023231930635645895 units=km linecode=35mm
+New Line.Line27 bus1=B_8.1 bus2=B_61.1 length=0.014942721880245254 units=km linecode=35mm
+New Line.Line28 bus1=B_9 bus2=B_10 length=0.03422049128378047 units=km linecode=95mm
+New Line.Line29 bus1=B_9.2 bus2=B_36.2 length=0.014441657540775296 units=km linecode=35mm
+New Line.Line30 bus1=B_9.1 bus2=B_95.1 length=0.02347121339570248 units=km linecode=35mm
+New Line.Line31 bus1=B_10 bus2=B_11 length=0.030024516092659808 units=km linecode=95mm
+New Line.Line32 bus1=B_10.1 bus2=B_32.1 length=0.014521521884898265 units=km linecode=35mm
+New Line.Line33 bus1=B_10.2 bus2=B_48.2 length=0.023072215186096513 units=km linecode=35mm
+New Line.Line34 bus1=B_10.2 bus2=B_54.2 length=0.017478813682040583 units=km linecode=35mm
+New Line.Line35 bus1=B_10.3 bus2=B_55.3 length=0.01989739215292596 units=km linecode=35mm
+New Line.Line36 bus1=B_11 bus2=B_12 length=0.034472836007832665 units=km linecode=95mm
+New Line.Line37 bus1=B_11 bus2=B_22 length=0.016526769079225023 units=km linecode=95mm
+New Line.Line38 bus1=B_11.2 bus2=B_43.2 length=0.01755848570990596 units=km linecode=35mm
+New Line.Line39 bus1=B_12.1 bus2=B_46.1 length=0.018872337096469977 units=km linecode=35mm
+New Line.Line40 bus1=B_12.2 bus2=B_84.2 length=0.02333069404776676 units=km linecode=35mm
+New Line.Line41 bus1=B_12.2 bus2=B_88.2 length=0.015278463491080838 units=km linecode=35mm
+New Line.Line42 bus1=B_13 bus2=B_14 length=0.026097419040889653 units=km linecode=95mm
+New Line.Line43 bus1=B_13 bus2=B_21 length=0.030452752733320192 units=km linecode=95mm
+New Line.Line44 bus1=B_13.2 bus2=B_63.2 length=0.015194725250573374 units=km linecode=35mm
+New Line.Line45 bus1=B_13.3 bus2=B_64.3 length=0.01988679201704542 units=km linecode=35mm
+New Line.Line46 bus1=B_14 bus2=B_15 length=0.02975156128530985 units=km linecode=95mm
+New Line.Line47 bus1=B_14.3 bus2=B_62.3 length=0.014974270090139933 units=km linecode=35mm
+New Line.Line48 bus1=B_14.1 bus2=B_94.1 length=0.02000951897837888 units=km linecode=35mm
+New Line.Line49 bus1=B_14.2 bus2=B_98.2 length=0.02215421808185434 units=km linecode=35mm
+New Line.Line50 bus1=B_15.2 bus2=B_51.2 length=0.014915709476786932 units=km linecode=35mm
+New Line.Line51 bus1=B_16 bus2=B_27 length=0.016654023234998743 units=km linecode=95mm
+New Line.Line52 bus1=B_16 bus2=B_28 length=0.011526311067702306 units=km linecode=95mm
+New Line.Line53 bus1=B_16.2 bus2=B_103.2 length=0.019635820869667916 units=km linecode=35mm
+New Line.Line54 bus1=B_17 bus2=B_28 length=0.024959869407456876 units=km linecode=95mm
+New Line.Line55 bus1=B_17.1 bus2=B_47.1 length=0.0264656477837488 units=km linecode=35mm
+New Line.Line56 bus1=B_17.3 bus2=B_52.3 length=0.03343357759585041 units=km linecode=35mm
+New Line.Line57 bus1=B_17.1 bus2=B_67.1 length=0.02538795828122785 units=km linecode=35mm
+New Line.Line58 bus1=B_17.2 bus2=B_91.2 length=0.03406738084428691 units=km linecode=35mm
+New Line.Line59 bus1=B_18 bus2=B_19 length=0.033736813678609416 units=km linecode=95mm
+New Line.Line60 bus1=B_18 bus2=B_25 length=0.04014091109872316 units=km linecode=95mm
+New Line.Line61 bus1=B_18 bus2=B_26 length=0.021626226380356058 units=km linecode=95mm
+New Line.Line62 bus1=B_18.2 bus2=B_99.2 length=0.02235962915460637 units=km linecode=35mm
+New Line.Line63 bus1=B_18.3 bus2=B_104.3 length=0.019121507962164642 units=km linecode=35mm
+New Line.Line64 bus1=B_19 bus2=B_20 length=0.02664742497822416 units=km linecode=95mm
+New Line.Line65 bus1=B_19.1 bus2=B_33.1 length=0.010336640941710589 units=km linecode=35mm
+New Line.Line66 bus1=B_19.3 bus2=B_50.3 length=0.020416831141071255 units=km linecode=35mm
+New Line.Line67 bus1=B_20 bus2=B_21 length=0.028423076962459118 units=km linecode=95mm
+New Line.Line68 bus1=B_20.1 bus2=B_40.1 length=0.014766942084833133 units=km linecode=35mm
+New Line.Line69 bus1=B_20.3 bus2=B_42.3 length=0.01613408990427277 units=km linecode=35mm
+New Line.Line70 bus1=B_20.2 bus2=B_75.2 length=0.01678367568284309 units=km linecode=35mm
+New Line.Line71 bus1=B_20.2 bus2=B_77.2 length=0.022125349763987265 units=km linecode=35mm
+New Line.Line72 bus1=B_20.3 bus2=B_89.3 length=0.0182512257148993 units=km linecode=35mm
+New Line.Line73 bus1=B_21.2 bus2=B_38.2 length=0.016815716541839297 units=km linecode=35mm
+New Line.Line74 bus1=B_21.1 bus2=B_41.1 length=0.018416925216063286 units=km linecode=35mm
+New Line.Line75 bus1=B_21.1 bus2=B_65.1 length=0.015071573350226805 units=km linecode=35mm
+New Line.Line76 bus1=B_21.2 bus2=B_66.2 length=0.01648340016928062 units=km linecode=35mm
+New Line.Line77 bus1=B_22.1 bus2=B_72.1 length=0.01632995182473724 units=km linecode=35mm
+New Line.Line78 bus1=B_23 bus2=B_24 length=0.03494052388657322 units=km linecode=95mm
+New Line.Line79 bus1=B_23.3 bus2=B_34.3 length=0.019626754807454263 units=km linecode=35mm
+New Line.Line80 bus1=B_23.2 bus2=B_57.2 length=0.016845441798973234 units=km linecode=35mm
+New Line.Line81 bus1=B_23.1 bus2=B_58.1 length=0.022257846104975245 units=km linecode=35mm
+New Line.Line82 bus1=B_23.3 bus2=B_79.3 length=0.015513003659996456 units=km linecode=35mm
+New Line.Line83 bus1=B_23.1 bus2=B_83.1 length=0.017170243534404765 units=km linecode=35mm
+New Line.Line84 bus1=B_24.1 bus2=B_86.1 length=0.016086144362182597 units=km linecode=35mm
+New Line.Line85 bus1=B_24.1 bus2=B_97.1 length=0.01739289656962839 units=km linecode=35mm
+New Line.Line86 bus1=B_25.2 bus2=B_70.2 length=0.015585382355204484 units=km linecode=35mm
+New Line.Line87 bus1=B_25.2 bus2=B_90.2 length=0.02300461491980064 units=km linecode=35mm
+New Line.Line88 bus1=B_25.2 bus2=B_101.2 length=0.01862308887642991 units=km linecode=35mm
+New Line.Line89 bus1=B_25.1 bus2=B_105.1 length=0.022561057274307853 units=km linecode=35mm
+New Line.Line90 bus1=B_26 bus2=B_27 length=0.035805036690784 units=km linecode=95mm
+New Line.Line91 bus1=B_26.1 bus2=B_37.1 length=0.019833560942763062 units=km linecode=35mm
+New Line.Line92 bus1=B_26.3 bus2=B_74.3 length=0.015588332843781813 units=km linecode=35mm
+New Line.Line93 bus1=B_26.1 bus2=B_92.1 length=0.021885716465221805 units=km linecode=35mm
+New Line.Line94 bus1=B_26.3 bus2=B_102.3 length=0.018763540598384434 units=km linecode=35mm
+New Line.Line95 bus1=B_27.1 bus2=B_39.1 length=0.015360109348702664 units=km linecode=35mm
+New Line.Line96 bus1=B_27.2 bus2=B_100.2 length=0.02234996533934212 units=km linecode=35mm
+New Line.Line97 bus1=B_27.3 bus2=B_106.3 length=0.019726131562436473 units=km linecode=35mm
+New Line.Line98 bus1=B_28 bus2=B_29 length=0.033022241591372 units=km linecode=95mm
+New Line.Line99 bus1=B_28.2 bus2=B_93.2 length=0.015606023030311012 units=km linecode=35mm
+New Line.Line100 bus1=B_29.1 bus2=B_76.1 length=0.015649656087299794 units=km linecode=35mm
+New Line.Line101 bus1=B_29.1 bus2=B_87.1 length=0.020400527470374245 units=km linecode=35mm
+New Line.Line102 bus1=B_30 bus2=B_31 length=0.031084590206519935 units=km linecode=95mm
+New Line.Line103 bus1=B_30.3 bus2=B_82.3 length=0.02228514854980057 units=km linecode=35mm
+New Line.Line104 bus1=B_31.1 bus2=B_45.1 length=0.018384140917726683 units=km linecode=35mm
+New Line.Line105 bus1=B_31.2 bus2=B_81.2 length=0.016418864035172433 units=km linecode=35mm
+New Load.Load1 bus1=B_32.1 phases=1 kV=0.4 kW=0.456 pf=0.95 status=fixed
+New Load.Load2 bus1=B_33.1 phases=1 kV=0.4 kW=0.456 pf=0.95 status=fixed
+New Load.Load3 bus1=B_34.3 phases=1 kV=0.4 kW=0.456 pf=0.95 status=fixed
+New Load.Load4 bus1=B_35.2 phases=1 kV=0.4 kW=0.456 pf=0.95 status=fixed
+New Load.Load5 bus1=B_36.2 phases=1 kV=0.4 kW=0.456 pf=0.95 status=fixed
+New Load.Load6 bus1=B_37.1 phases=1 kV=0.4 kW=0.456 pf=0.95 status=fixed
+New Load.Load7 bus1=B_38.2 phases=1 kV=0.4 kW=0.456 pf=0.95 status=fixed
+New Load.Load8 bus1=B_39.1 phases=1 kV=0.4 kW=0.456 pf=0.95 status=fixed
+New Load.Load9 bus1=B_40.1 phases=1 kV=0.4 kW=0.456 pf=0.95 status=fixed
+New Load.Load10 bus1=B_41.1 phases=1 kV=0.4 kW=0.456 pf=0.95 status=fixed
+New Load.Load11 bus1=B_42.3 phases=1 kV=0.4 kW=0.456 pf=0.95 status=fixed
+New Load.Load12 bus1=B_43.2 phases=1 kV=0.4 kW=0.456 pf=0.95 status=fixed
+New Load.Load13 bus1=B_44.3 phases=1 kV=0.4 kW=0.456 pf=0.95 status=fixed
+New Load.Load14 bus1=B_45.1 phases=1 kV=0.4 kW=0.456 pf=0.95 status=fixed
+New Load.Load15 bus1=B_46.1 phases=1 kV=0.4 kW=0.456 pf=0.95 status=fixed
+New Load.Load16 bus1=B_47.1 phases=1 kV=0.4 kW=0.456 pf=0.95 status=fixed
+New Load.Load17 bus1=B_48.2 phases=1 kV=0.4 kW=0.456 pf=0.95 status=fixed
+New Load.Load18 bus1=B_49.2 phases=1 kV=0.4 kW=0.456 pf=0.95 status=fixed
+New Load.Load19 bus1=B_50.3 phases=1 kV=0.4 kW=0.456 pf=0.95 status=fixed
+New Load.Load20 bus1=B_51.2 phases=1 kV=0.4 kW=0.456 pf=0.95 status=fixed
+New Load.Load21 bus1=B_52.3 phases=1 kV=0.4 kW=0.456 pf=0.95 status=fixed
+New Load.Load22 bus1=B_53.2 phases=1 kV=0.4 kW=0.456 pf=0.95 status=fixed
+New Load.Load23 bus1=B_54.2 phases=1 kV=0.4 kW=0.456 pf=0.95 status=fixed
+New Load.Load24 bus1=B_55.3 phases=1 kV=0.4 kW=0.456 pf=0.95 status=fixed
+New Load.Load25 bus1=B_56.2 phases=1 kV=0.4 kW=0.456 pf=0.95 status=fixed
+New Load.Load26 bus1=B_57.2 phases=1 kV=0.4 kW=0.456 pf=0.95 status=fixed
+New Load.Load27 bus1=B_58.1 phases=1 kV=0.4 kW=0.456 pf=0.95 status=fixed
+New Load.Load28 bus1=B_59.1 phases=1 kV=0.4 kW=0.456 pf=0.95 status=fixed
+New Load.Load29 bus1=B_60.2 phases=1 kV=0.4 kW=0.456 pf=0.95 status=fixed
+New Load.Load30 bus1=B_61.1 phases=1 kV=0.4 kW=0.456 pf=0.95 status=fixed
+New Load.Load31 bus1=B_62.3 phases=1 kV=0.4 kW=0.456 pf=0.95 status=fixed
+New Load.Load32 bus1=B_63.2 phases=1 kV=0.4 kW=0.456 pf=0.95 status=fixed
+New Load.Load33 bus1=B_64.3 phases=1 kV=0.4 kW=0.456 pf=0.95 status=fixed
+New Load.Load34 bus1=B_65.1 phases=1 kV=0.4 kW=0.456 pf=0.95 status=fixed
+New Load.Load35 bus1=B_66.2 phases=1 kV=0.4 kW=0.456 pf=0.95 status=fixed
+New Load.Load36 bus1=B_67.1 phases=1 kV=0.4 kW=0.456 pf=0.95 status=fixed
+New Load.Load37 bus1=B_68.2 phases=1 kV=0.4 kW=0.456 pf=0.95 status=fixed
+New Load.Load38 bus1=B_69.3 phases=1 kV=0.4 kW=0.456 pf=0.95 status=fixed
+New Load.Load39 bus1=B_70.2 phases=1 kV=0.4 kW=0.456 pf=0.95 status=fixed
+New Load.Load40 bus1=B_71.1 phases=1 kV=0.4 kW=0.456 pf=0.95 status=fixed
+New Load.Load41 bus1=B_72.1 phases=1 kV=0.4 kW=0.456 pf=0.95 status=fixed
+New Load.Load42 bus1=B_73.2 phases=1 kV=0.4 kW=0.456 pf=0.95 status=fixed
+New Load.Load43 bus1=B_74.3 phases=1 kV=0.4 kW=0.456 pf=0.95 status=fixed
+New Load.Load44 bus1=B_75.2 phases=1 kV=0.4 kW=0.456 pf=0.95 status=fixed
+New Load.Load45 bus1=B_76.1 phases=1 kV=0.4 kW=0.456 pf=0.95 status=fixed
+New Load.Load46 bus1=B_77.2 phases=1 kV=0.4 kW=0.456 pf=0.95 status=fixed
+New Load.Load47 bus1=B_78.3 phases=1 kV=0.4 kW=0.456 pf=0.95 status=fixed
+New Load.Load48 bus1=B_79.3 phases=1 kV=0.4 kW=0.456 pf=0.95 status=fixed
+New Load.Load49 bus1=B_80.1 phases=1 kV=0.4 kW=0.456 pf=0.95 status=fixed
+New Load.Load50 bus1=B_81.2 phases=1 kV=0.4 kW=0.456 pf=0.95 status=fixed
+New Load.Load51 bus1=B_82.3 phases=1 kV=0.4 kW=0.456 pf=0.95 status=fixed
+New Load.Load52 bus1=B_83.1 phases=1 kV=0.4 kW=0.456 pf=0.95 status=fixed
+New Load.Load53 bus1=B_84.2 phases=1 kV=0.4 kW=0.456 pf=0.95 status=fixed
+New Load.Load54 bus1=B_85.2 phases=1 kV=0.4 kW=0.456 pf=0.95 status=fixed
+New Load.Load55 bus1=B_86.1 phases=1 kV=0.4 kW=0.456 pf=0.95 status=fixed
+New Load.Load56 bus1=B_87.1 phases=1 kV=0.4 kW=0.456 pf=0.95 status=fixed
+New Load.Load57 bus1=B_88.2 phases=1 kV=0.4 kW=0.456 pf=0.95 status=fixed
+New Load.Load58 bus1=B_89.3 phases=1 kV=0.4 kW=0.456 pf=0.95 status=fixed
+New Load.Load59 bus1=B_90.2 phases=1 kV=0.4 kW=0.456 pf=0.95 status=fixed
+New Load.Load60 bus1=B_91.2 phases=1 kV=0.4 kW=0.456 pf=0.95 status=fixed
+New Load.Load61 bus1=B_92.1 phases=1 kV=0.4 kW=0.456 pf=0.95 status=fixed
+New Load.Load62 bus1=B_93.2 phases=1 kV=0.4 kW=0.456 pf=0.95 status=fixed
+New Load.Load63 bus1=B_94.1 phases=1 kV=0.4 kW=0.456 pf=0.95 status=fixed
+New Load.Load64 bus1=B_95.1 phases=1 kV=0.4 kW=0.456 pf=0.95 status=fixed
+New Load.Load65 bus1=B_96.3 phases=1 kV=0.4 kW=0.456 pf=0.95 status=fixed
+New Load.Load66 bus1=B_97.1 phases=1 kV=0.4 kW=0.456 pf=0.95 status=fixed
+New Load.Load67 bus1=B_98.2 phases=1 kV=0.4 kW=0.456 pf=0.95 status=fixed
+New Load.Load68 bus1=B_99.2 phases=1 kV=0.4 kW=0.456 pf=0.95 status=fixed
+New Load.Load69 bus1=B_100.2 phases=1 kV=0.4 kW=0.456 pf=0.95 status=fixed
+New Load.Load70 bus1=B_101.2 phases=1 kV=0.4 kW=0.456 pf=0.95 status=fixed
+New Load.Load71 bus1=B_102.3 phases=1 kV=0.4 kW=0.456 pf=0.95 status=fixed
+New Load.Load72 bus1=B_103.2 phases=1 kV=0.4 kW=0.456 pf=0.95 status=fixed
+New Load.Load73 bus1=B_104.3 phases=1 kV=0.4 kW=0.456 pf=0.95 status=fixed
+New Load.Load74 bus1=B_105.1 phases=1 kV=0.4 kW=0.456 pf=0.95 status=fixed
+New Load.Load75 bus1=B_106.3 phases=1 kV=0.4 kW=0.456 pf=0.95 status=fixed
+New Monitor.MonLine1 element=Line.Line1 terminal=1
+New Monitor.MonLoad1 element=Load.Load1 terminal=1
+Set voltagebases=[11, 0.415]
+Calcvoltagebases
+
+solve mode=snap maxiterations=100
